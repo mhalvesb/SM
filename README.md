@@ -19,8 +19,8 @@
 
 + Verificação de e-mail
 + Recuperação de usuario e senha
-+ Postar fotos e videos
-+ Adicionar outros usuarios como amigos
++ Postagem de fotos e videos
++ Adicionar outros usuarios
 + Campo de pesquisa de usuarios
 
 >Site está completamente responsivo para dipositivos ⚙️
