@@ -12,7 +12,7 @@
 + Registro incluindo nome, usuario, senha e e-mail
 + Area de postagem
 + Area de comentarios
-+ Edição de perfil, incluindo os aspectos do registro mais seu país de origem e data de nascimento
++ Edição de perfil
 
 
 > O que estou desenvolvendo para o site atualmente ⚙️
@@ -23,17 +23,32 @@
 + Adicionar outros usuarios como amigos
 + Campo de pesquisa de usuarios
 
+>Site está completamente responsivo para dipositivos ⚙️
++ PC ✅
++ Tablet ✅
++ Celulares ✅
+
 > Tecnologias utilizadas ⚙️
-+ HTML5
-+ CSS
-+ JAVASCRIPT
-+ NODE JS
++ HTML5 ✅
++ CSS ✅ 
++ JAVASCRIPT ✅
++ NODE JS ✅
 
 > Também utilizei ⚙️
-+ Banco de dados MYSQL
-+ Engine de visualização Handlebars
++ Banco de dados MYSQL ✅
++ Engine de visualização Handlebars ✅
 
 
 > Veja algumas imagens
++ Area de login
+<img src="/SMPhotos/log.png">
 
-<img src="/SM-photos/log.png">
++ Página principal de postagens
+<img src="/SMPhotos/menuarea.png">
+
++ Responsivo para dispositivos mobile
+<img src="/SMPhotos/cellphone.png">
+
+
+> Você pode acessar o site na seguinte url
++ https://socialmedia-production-a989.up.railway.app/auth/login
