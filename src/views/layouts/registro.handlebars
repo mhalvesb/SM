@@ -1,0 +1,58 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Registro</title>
+</head>
+
+
+
+
+
+
+
+<div class="box-area">
+<main>
+ <div class="alert-area">
+        {{#each erros}}
+            <div class="alert">
+                <h5>    {{texto}}   </h5>
+            </div>
+        {{else}}
+        {{/each}}
+    </div>
+    <div class="box">
+            <form action="/auth/registro" method="post">
+                <h1>Faça seu registro</h1>
+                <div class="name">
+                    <img src="/imagens/icons/assinatura.png" alt="name" class="images">
+                    <input type="text" name="nome" class="login" required="required">
+                    <span>Nome</span>
+                </div>
+                <div class="email">
+                    <img src="/imagens/icons/envelope.png" alt="email" class="images">
+                    <input type="text" name="email" class="login" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="username">
+                    <img src="/imagens/icons/username.png" alt="username" class="images">
+                    <input type="text" name="login" class="login" required="required">
+                    <span>Usuário</span>
+                </div>
+                <div class="password">
+                    <img src="/imagens/icons/trancar.png" alt="password" class="images">
+                    <input type="password" name="senha" class="pass" required="required">
+                    <span>Senha</span>
+                </div>
+                
+                <button type="submit">Criar conta</button>
+            </form>
+            <div class="logfoo">
+               Já possui login? <a href="/auth/login">Area de login</a>
+            </div>
+
+    </div>
+</div>
+</main>
+   

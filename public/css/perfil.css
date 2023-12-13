@@ -1,0 +1,210 @@
+
+
+*{
+    font-family: 'Arimo', sans-serif;
+    box-sizing: content-box;
+}
+
+
+
+body, html{
+    margin: 0;
+}
+
+body{
+    background-color: #343434;
+}
+
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.top{
+    display: flex;
+    padding: 60px;
+    color: #fff;
+}
+.infos{
+    margin-left: 25px;
+}
+.photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo img{
+    width: 160px;
+    height: auto;
+}
+.main{
+    display: flex;
+    background-color: #0e1111;
+    align-items: flex-start;
+    margin: 10px 60px;
+    border-radius: 10px;
+    padding: 20px 5px;
+}
+
+.save{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 60px;
+    border-radius: 10px;
+    padding: 20px 15px;
+    background-color: #0e1111;
+}
+.save h2{
+    color: #fff;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-left: 2px solid #888888;
+    align-items: center;
+}
+input{
+    color: #000;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+input, label, #nacio{
+    margin: 5px 10px;
+    width: 80%;
+}
+label{
+    color: #fff;
+}
+
+.save button{
+    background-color: #FFF;
+    width: 200px;
+    height: 40px;
+    justify-content: flex-end;
+    align-self: center;
+    color: #0e1111;
+    font-weight: 700;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.save button:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+#nacio{
+    border: 2px solid #888888;
+    margin: 5px 10px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 1px 2px;
+}
+
+#birthday::-webkit-inner-spin-button{
+    display: none;
+}
+
+
+#files{
+    position: absolute;
+}
+#prof{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.file{
+    margin: 0px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter:opacity(0%);
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.file:hover{
+    filter:opacity(80%);
+}
+.file img{
+    width: 40px;
+    padding: 40px;
+    height: auto;
+}
+
+.line{
+    position: absolute;
+    border: 4px dotted #888888;
+    padding: 60px;
+    border-radius: 50%;
+}
+
+
+
+
+@media(max-width: 1000px){
+    .top{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    #files{
+        width: 0%;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 650px){
+    .save button{
+        width: 120px;
+        height: 30px;
+    }
+    .save h2{
+        font-size: 1.2rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .main{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .left, .right{
+        width: 100%;
+        flex: none;
+        flex-wrap: wrap;
+        border: none;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

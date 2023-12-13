@@ -1,0 +1,114 @@
+<link rel="stylesheet" href="css/menu.css">
+<title>Menu</title>
+
+<html>
+<body>
+    
+
+
+<section>
+    <div class="left">
+        <div class="profile">
+            <h1>{{nome}}</h1>
+            <img src="{{profileimg}}" alt="profile">
+        </div>
+        <hr>
+        <div class="profileinformations">
+            <img src="/imagens/icons/mundo.png" alt="pais">
+            <p>{{nacionalidade}}</p>
+        </div>
+        <div class="profileinformations">
+            <img src="/imagens/icons/calendario.png" alt="calendar">
+            <p>{{birthday}}</p>
+        </div>
+        
+    </div>
+
+    <div class="main">
+        <form action="/profile" method="post">
+            <div class="post">
+                <div class="more">
+                <textarea name="postar" required="required"></textarea>
+                <span>Digite algo para postar</span>
+                
+                <button class="postabutton"><img src="/imagens/icons/lapis.png" alt="postar"> Postar</button>
+            </div>
+           
+            <input type="hidden" name="tipo" value="postagem">
+        </div>
+        </form>
+        
+        <hr class="hr">
+        
+        <div class="postarea">
+            {{#each post}}
+            <div class="postandcoments">
+            <div class="posts">
+                <div class="postsinfos">
+                    <img src="{{dataValues.profileimage}}" alt="profile">
+                    <div class="post-texts">
+                        <h3>{{dataValues.nome}}</h3>
+                        <p class="data">{{dataValues.createdAt}}</p>
+                    </div>
+                </div>
+                <h6>{{dataValues.tipodepost}}</h6>
+                <button class="" id="coment"><img src="/imagens/icons/pontos-de-comentario.png" alt="comentar">Comentar</button>
+            </div>
+
+
+
+        <div class="comentfull">
+        <div class="coment-area">
+                <div class="closecoment">
+                    X
+                </div>
+            <div class="pub">
+                <div class="pubinfo">
+                    <img src="{{dataValues.profileimage}}" alt="pub">
+                    <div class="pubtext">
+                        <h3>{{dataValues.nome}}</h3>
+                        <p class="data">{{dataValues.createdAt}}</p>
+                    </div>
+                </div>
+                <h6>{{dataValues.tipodepost}}</h6>
+            </div>
+            <hr>
+            {{#each Comentarios}}
+            <div class="coments">
+                <div class="comentinfo">
+                    <img src="{{dataValues.profileimage}}" alt="pub">
+                    <div class="comenttext">
+                        <h3>{{dataValues.nome}}</h3>
+                        <p class="data">{{dataValues.createdAt}}</p>
+                    </div>
+                </div>
+                 <h6>{{dataValues.comentario}}</h6>
+                </div>
+                {{/each}}
+
+                <form action="/profile" method="post" class="formcoment">
+                            <input type="text" placeholder="Comente algo" name="comentar" required="required">
+                            <input type="hidden" name="postsid" id="postsid" value={{dataValues.id}}>
+                            <input type="hidden" name="tipo" value="comentario">
+                            <button type="submit"><img src="/imagens/icons/check.png" alt="check"></button>
+                            
+                </form>
+        </div>
+        </div>
+        </div>
+        <hr class="hr">
+        {{/each}}
+    </div>
+    </div>
+</section>
+
+<script src="js/coment.js"></script>
+<script src="js/getHours.js"></script>
+<script src="js/birthdayDate.js"></script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,30 @@
+.header{
+    background-color: #0e1111;
+}
+
+header{
+    display: inline-block;
+    width: 100vw;
+}
+
+ul{
+    margin: 5px 0px;
+    display: flex;
+    padding: 10px 60px;
+   
+}
+
+li{
+    list-style-type: none;
+    background-color: #343434;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
